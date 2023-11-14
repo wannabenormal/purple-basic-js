@@ -47,7 +47,7 @@ const getShiftedChar = (char, shift) => {
   }
 
   if (targetIndex < 0) {
-    targetIndex = ALPHABET.length - targetIndex;
+    targetIndex = ALPHABET.length - Math.abs(targetIndex);
   }
 
   return ALPHABET[targetIndex];
